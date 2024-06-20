@@ -1,0 +1,12 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #6a42a6;
+    color: white;
+}
+.list{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}

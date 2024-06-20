@@ -1,16 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import styles from './headerBeauty.module.css'
+import { NavLink } from 'react-router-dom'
 export default function Header() {
   return (
   <>
-    <nav>
+    <nav className={styles.nav}>
         <span>
             logo t
         </span>
-        <ul>
-            <li><Link to="/">Dashboard</Link></li>
-            <li><Link to="/About">About</Link></li>
-            <li><Link to="/Contact">Contact Us</Link></li>
+        <ul className={styles.list}>
+            <li><NavLink to="/">Dashboard</NavLink></li>
+            <li><NavLink to="/About">About</NavLink></li>
+            <li><NavLink to="/Contact">Contact Us</NavLink></li>
         </ul>
     </nav>
 

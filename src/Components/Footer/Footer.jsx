@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from './footerBeauty.module.css'
 
 export default function Footer() {
   return (
-    <div>This site is maintain by Rashmi</div>
+    <div className={styles.foot}>
+      This site is maintain by Rashmi
+    </div>
     
   )
 }
