@@ -1,0 +1,21 @@
+.img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+.cart{
+    width: fit-content;
+    height: 350px;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    color: gray;
+    font-size: 15px;
+}
