@@ -9,7 +9,7 @@ const BigContainer = (props) => {
         let url='http://localhost:3001/products'
         let p=axios.get(url)
         p.then((res)=>{
-            // console.log(res.data)
+            console.log(res.data)
             setProducts(res.data)
         }).catch((err)=>{
             console.log(err)
