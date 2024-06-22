@@ -6,7 +6,7 @@ import axios from 'axios';
 const BigContainer = (props) => {
     const [products,setProducts]=useState([])
     const getData=()=>{
-        let url='http://localhost:3001/products'
+        let url='https://boutique-website.onrender.com/products'
         let p=axios.get(url)
         p.then((res)=>{
            // console.log(res.data.bestSelling)
