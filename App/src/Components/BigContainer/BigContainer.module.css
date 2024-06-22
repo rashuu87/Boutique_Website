@@ -1,0 +1,37 @@
+.container{
+    width: 90%;
+    background: rgb(235, 188, 188);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.fakeContainer{
+    width: 100%;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.fakeContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.fakeContainer::-webkit-scrollbar-thumb {
+    background: #dfabab;
+    border-radius: 4px;
+}
+
+.fakeContainer::-webkit-scrollbar-thumb:hover {
+    background: #deb7b7;
+}
+
+.cartWrapper {
+    flex: 0 0 calc(25% - 1rem); /* Ensure 4 items fit in the container with gaps */
+    box-sizing: border-box;
+}

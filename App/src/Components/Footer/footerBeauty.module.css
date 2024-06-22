@@ -1,0 +1,65 @@
+.foot {
+    background: #6a42a6;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about, .quickLinks, .contact, .social {
+    max-width: 300px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p, ul, li, a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons a {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #ff6600;
+}
+
+.footerBottom {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about, .quickLinks, .contact, .social {
+        max-width: 200px;
+    }
+}

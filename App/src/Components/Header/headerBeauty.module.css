@@ -1,0 +1,106 @@
+/* .nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    color: rgb(231, 231, 9);
+    background-color: black;
+}
+.list{
+    height: 3rem;
+    font-size:1.5rem;
+    margin: 5px 2px 2px 2px;
+    text-decoration-line: none;
+    
+    display: flex;
+    gap: 1rem;
+    list-style-type:none;
+    text-decoration: none;
+} */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #ffccff; /* Pastel pink background */
+    color: #663399; /* Purple text color */
+    animation: blink 2s infinite;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #663399; /* Purple text color */
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list a {
+    font-size: 1.5rem;
+    color: #663399; /* Purple text color */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.list a:hover {
+    color: #ff66cc; /* Lighter pink hover effect */
+}
+
+.navIcons a {
+    color: #663399; /* Purple text color */
+    margin-left: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #663399; /* Purple text color */
+}
+
+@media (max-width: 768px) {
+    .list {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        background-color: #ffccff; /* Pastel pink background */
+        width: 100%;
+        height: calc(100vh - 60px);
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+    }
+
+    .list.active {
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
